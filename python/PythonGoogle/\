@@ -1,0 +1,22 @@
+
+
+import sys
+
+def Hello(me):
+
+
+me = me + '!!!!!!'
+pritn 'Hello', name
+
+
+
+def main():
+ Hello(sys.argv[1])
+   
+#print sys.argv
+# print "Hello"
+
+# This is the standard boilerplate that calls hte main() function
+
+if __name__ == '__main__':
+ 
