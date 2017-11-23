@@ -9,9 +9,10 @@ black =   '\033[1;30m'#45m
 red   =   '\033[1;31m'#45m
 yellow =  '\033[1;33m'#45m
 blue  =   '\033[1;34m'#45m
-purplr =  '\033[1;35m'#45m
+purple =  '\033[1;35m'#45m
 cyan =    '\033[1;36m'#45m
-white =   '\033[1;37m'#45m #White is normal colour
+white =   '\033[1;37m'#45m
+reset =   '\033[0;37m'
 
 def oput_colour():
     print 'My colourful texts'
@@ -20,9 +21,9 @@ def oput_colour():
     print red   ,'Red'
     print yellow,'Yellow'
     print blue  ,'Blue'
-    print purplr,'Purple'
+    print purple,'Purple'
     print cyan  ,'Cyan'
-    print white ,'White'
+    print white ,'White', reset
     print '\n Their colourful texts'
     print("\033[0;37;40m Normal text\n")
     print("\033[2;37;40m Underlined text\033[0;37;40m \n")
