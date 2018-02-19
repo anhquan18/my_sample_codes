@@ -1,3 +1,5 @@
+# Generator is the construct of a function or codes it won't do anything unless 
+#you activate it with for or next() until it is empty
 def create_generator(a, b):
     list = range(2)
     # return the first value of the loop and then keep returning the next value from the next call

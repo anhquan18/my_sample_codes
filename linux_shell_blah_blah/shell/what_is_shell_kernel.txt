@@ -1,7 +1,7 @@
     kernel (hat nhan, loi) is the core of linux os and it handles all 
  the software (application, package) to control your computer's 
  hardware (ex: cpu, rom, ram,...) and also handle the command you 
- input from terminal
+ input from terminal. There is many type of shell that exist
 
     terminal is a program that run a shell. In the past, terminal were
  moniters and keyboards but now is software
