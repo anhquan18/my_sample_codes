@@ -1,0 +1,6 @@
+shutdown:
+    sudo halt
+    sudo shutdown
+    sudo shutdown -h now
+    sudo shutdown -r now
+    sudo poweroff
