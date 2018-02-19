@@ -24,7 +24,7 @@ def word_count(file_name):
         file_name.close()
     except Exception as er:
         print 'Error: problem with', file_name, er
-       
+    
     for word in file_content.split():
         if word in word_list:
             word_list[word] += 1
