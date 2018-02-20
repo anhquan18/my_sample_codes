@@ -4,7 +4,8 @@
  input from terminal. There is many type of shell that exist
 
     terminal is a program that run a shell. In the past, terminal were
- moniters and keyboards but now is software
+ moniters and keyboards but now is software. It is the input output inetrface 
+ software (terminal emulator)
 
     shell (lop vo) is the softwares that let users communicate with 
  the kernel, it's the kernel's interface, the intermediate software 
