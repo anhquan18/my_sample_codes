@@ -14,3 +14,8 @@ search in history:
     ctrl r -> use (destroy: ctrl q, execute: enter, back with command: esc)
 1 more line before or after: 
     ctrl p, ctrl n
+
+search file: locate -b (basename) -> search file named ... only
+
+search multiple files: OR: locate doct docu (search doct or docu)
+                               AND: locate -A doct docu (search all)

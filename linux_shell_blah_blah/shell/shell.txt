@@ -1,5 +1,5 @@
-    There is a thing called login shell which is a thing that activated when linux is booted. To find
-where is login shell: use echo $SHELL
+    There is a thing called login shell which is a thing that activated when linux
+ is booted. To find where is login shell: use echo $SHELL
     
     There are many type of shell: sh, csh, bash, tcsh, zsh
  

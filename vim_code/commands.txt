@@ -1,0 +1,4 @@
+Move cursor: 0, $
+connect line: J
+delete one word: dw
+delete whole file
