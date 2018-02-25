@@ -1,0 +1,2 @@
+    Use command which to search the path of the command you want to find
+    Ex: which cat

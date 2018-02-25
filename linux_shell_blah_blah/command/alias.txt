@@ -1,0 +1,23 @@
+    Use alias command to make other name for command in terminal(or shell)
+    Ex: alias <name>='command' (alias ls='ls -a')
+
+    To check if a command is alias or not use type command
+    Ex: type <command name> (type cp)
+    real command -> path is returned
+     alias -> alias or somthing like that
+
+     To remove alias use unalias command
+     Ex: unalias <command name> (unalias cp)
+
+     
+     Some time you just want to disable alias one time to use other options and 
+     then use alias again. There are a couple ways to do it
+     
+     1: use the whole path of the command
+     Ex: /bin/ls (ls's path)
+
+     2: use command
+     Ex: command <alias>
+
+     3: use escape backslash '\'
+     Ex: \<alias>

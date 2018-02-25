@@ -1,3 +1,4 @@
+Tutorial: vimtutor, :help d, help :w, :help
 Move cursor: 0, $
 connect line: J
 delete one word: dw
