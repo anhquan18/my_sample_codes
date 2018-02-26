@@ -32,6 +32,8 @@ class Alien(Monster):
     #the parent's one
     # Super cannot use with old style class in python 2 that why if you call out
     #a class like class Monster:, or class Moster(): python will give you an error
+    # In order to use the super() you have to overriden the function that you are going to
+    #call, if you don't do it, python will return error
     def __init__(self, lv, hp, dfd, atk):
         Monster.__init__(self,lv, hp, dfd, atk)
         Monster.tired(self)
