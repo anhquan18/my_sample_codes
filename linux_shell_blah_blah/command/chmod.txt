@@ -1,0 +1,35 @@
+    Use to change the file mode. In chmod you can change mode with symbol or 
+with number.
+    
+    Caution: only the owner of the file or super user can change the mode of file
+
+Symbol mode:
+    chmod [ugoa][+-=][rwx] <file name>
+    
+    mean: change mode [u...]who [+...]can [r...]do something file name
+u: owner
+g: group
+o: other user
+a: all of the above
+
++: add permission
+-: ban permission
+=: set permision exactly like this
+
+Ex: chmod go-wx file.txt
+
+
+    A little bit different from symbol mode numberlic mode is absolute(which I 
+    don't understand the different either)
+Numberlic mode:
+    chmod <octal number> <file name>
+
+4: stand for r
+2: stand for w
+1: stand for x
+
+the sum of the permission you allow will be the octal number
+Ex: rw is 6, wx is 3, rwx is 7
+
+and will be place to follow the order of owner - group - others
+Ex: owner(rwx 7) group(r-x 5) others(r-- 4) -> chmod 755 file.txt

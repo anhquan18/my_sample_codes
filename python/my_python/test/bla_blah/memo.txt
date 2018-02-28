@@ -1,0 +1,16 @@
+local() -> return the dictionary of current local variable
+globals -> return the dictionary of current global variable
+you can access the global var with global var_name
+
+those var have __ in the start and end of their name are special var used within
+python so you should not use it for your var
+
+underscore use:
+1. Used in the interpreter to call out the last val
+2. ignore val (Ex: x,_,y = 1,2,3 # x = 1, y = 3)
+3. give special meaning to name of var and func
+    (any var was written like this _varname will be private and can't be seen from
+    outside in from module import *)
+    (like var func and class can also be private as well like this _funcname 
+    private func. _class private class)
+

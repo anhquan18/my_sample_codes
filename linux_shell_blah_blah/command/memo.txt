@@ -32,6 +32,8 @@ bold orange : \[\033[01;35m\]
 bold cyan   : \[\033[01;36m\]
 reset       : \[\033[0m\]
 
+Change the 01 to 0 or 1 to try different colors
+
 
 You can create your command and then after that you can use it without type the 
 ful pass, all you have to do is input the value into the searching path
@@ -69,3 +71,8 @@ Ex: LANG=<different language>
       cat --help -> different language come out
  This is not because of bash, cat read the environment variable and then change
  the output base on it
+
+
+    ######
+    Note     REMEMBER TO USE TMUX
+    ######

@@ -1,0 +1,21 @@
+    Use ls -l to find out the file's permission
+    The output will have 10 chars at the head of the line, first char will be
+ file's type, next 9 will be the file mode split to 3 groups by each 3 char
+ and will stand for the permission of owner, group, other users.
+    
+    There are three symbols(permission):
+r: read
+w: write (file can still be delete from outside)
+x: execute
+-: don't have permission
+
+
+    Like file, dir also have the permission as well, and also have the rwx but 
+in a different meaning
+r: can read (using ls to see the content inside dir)
+w: can create and remove file from dir (not relate to file permission)
+x: cd into the dir
+
+    Some time all of those symbols can be number
+
+    You can use chmod command to change the file mode

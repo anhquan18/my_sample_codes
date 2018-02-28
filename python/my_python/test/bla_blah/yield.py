@@ -18,3 +18,7 @@ mygene = create_generator(word, input('input something:\n'))
 
 for i in mygene:
     print i
+
+print create_generator('Hi',10)
+print create_generator('Hi',5)
+print create_generator('Hi',1)

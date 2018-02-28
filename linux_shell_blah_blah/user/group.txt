@@ -1,0 +1,10 @@
+    In linux many user can access one machine in the same time that is why there
+are permission for each file(which you are already know)
+    
+    There are many groups (which have many users) and each group can let its users
+have the same permission. Each user have to belong to one group (at least I think)
+
+    If you don't specify the name of the group at first it will be the same as
+your user's name
+    
+    Use groups command to check the groups
