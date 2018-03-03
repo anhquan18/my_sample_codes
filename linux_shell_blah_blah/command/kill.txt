@@ -1,0 +1,30 @@
+    kill command is not a command to shutdown other proccess it is a command
+that send signal
+
+    In linux signal are things that you send to ps, terminated, stopped, 
+    run again, by sending signal like this you can connect ps to ps that
+    are running
+
+    The signal that kill send is "kill -<signal name>", if you 省略 the 
+    signal name then the default val will be TERM it means that these 2
+    have the same meaning:
+    
+    kill 4695 == kill -TERM 4695 
+
+    Because the number of TERM signal is 15 the next command will also have
+    the same meaning:
+
+    kill -15 4695
+
+    The TERM signal we got here mean Terminate that is why if you don't give
+    any option (-signal) then the default will be terminate kill the ps.
+
+    The ctrl z, ctrl c are also sending signal to ps as well (ctrl z: TSTP,
+    ctrl c: INT) from all of these signal jobs will be stopped or terminated
+    there will be SIG before the name of signal's name that is why they will
+    be seen as SIGTERM, SIGINT, SIGKLL, SIGTSTP
+
+    NOTE: the SIGKILL is an exception which don't send signal to ps but 
+    directly excuted by the Linux's kernel, every kill excuted by Linux's 
+    kernel will be forced to terminate, only use for the ps that SIGTERM 
+    not work on, only use it as the last chance you have.

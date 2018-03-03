@@ -39,8 +39,10 @@ class Alien(Monster):
     # When the child class's function has the same name with the parent class's
     #function the child's one will replace the parent's one, use super() to call
     #the parent's one
+    
     # Super cannot use with old style class in python 2 that why if you call out
     #a class like class Monster:, or class Moster(): python will give you an error
+    
     # In order to use the super() you have to overriden the function that you are going to
     #call, if you don't do it, python will return error
     def __init__(self, lv, hp, dfd, atk):
