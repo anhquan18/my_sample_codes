@@ -11,8 +11,16 @@ create motion (play motion), play sound,
     
 
     ### rcl.WorldState ###
-    Get all the game state, object like ball, robot(our, enemy), 
+    Get all the game state, object like ball, robot(our, enemy), list of objects
+    (ball, last_visible_ball, goal_pole, robot_our, robot_enemy by using number)
+    and get a node called self_state from rcl.SoccerAgent.SelfState(get selfID, hlkick_off_state)
+    and get a node called switch_state from rcl.SoccerAgent.Switch_State(reveive a list of state_ID)
+
+    ### kid.stategy.HLKidstrategy ###
+    __init__ will receive the ID, list object from goal.KnowSelfPos, role 
 
     ### Strategy ###
-    Robot is boot with kid.stratergy.HLKids...() first to receive the role of it(neutral) and self
-position(a class in goal.py to receive the id), goal 
+    Robot is: 
+        1. Boot with kid.stratergy.HLKids...() first to receive the ID, list of object from 
+            rcl.WorldState from goal.KnowSelfPos
+         2. Receive SoccerAgent from rcl
