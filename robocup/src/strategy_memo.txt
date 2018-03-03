@@ -1,0 +1,18 @@
+    ### Note ### 
+    There are some abc like rcl.Stategy, to remind you the abstract of a class all id of classes will
+ be input by a list at the end of the file that the class stay in
+
+
+    ### rcl.SoccerAgent ###
+    There is a class named SoccerAgent which responsible for many action of the robot like: 
+create motion (play motion), play sound, 
+ BRAIN to caculate (get time, error, QR, memorize, forget, get state to kick, change state, set pos, use yolo, planning the strategy, set switch)
+ get Self_State(set the ID, pos, maybe set kick), update, Observe... (change type, afti, arrpos, velo)
+    
+
+    ### rcl.WorldState ###
+    Get all the game state, object like ball, robot(our, enemy), 
+
+    ### Strategy ###
+    Robot is boot with kid.stratergy.HLKids...() first to receive the role of it(neutral) and self
+position(a class in goal.py to receive the id), goal 

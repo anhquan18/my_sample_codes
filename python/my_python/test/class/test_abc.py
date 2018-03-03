@@ -3,6 +3,8 @@ import abc
 class Base(object):
     __metaclass__ = abc.ABCMeta
     
+    @abc.abstractproperty
+    id = 1
     # When you use @abc.abstractproperty the property become read-only 
     #and you won't be able to use it 
     @abc.abstractproperty
@@ -16,6 +18,10 @@ class Implementation(Base):
     def value(self):
         return 'concrete property'
 
+    @property 
+    def r_id(self):
+        return self.id
+
 
 try:
     b = Base()
@@ -25,3 +31,4 @@ except Exception as err:
 
 i = Implementation()
 print 'Implementation.value:', i.value
+print i.r_id()
