@@ -1,0 +1,28 @@
+ When user use cat command a standard input chanel called stdin is opened - a chanel is the way 
+ that data flows - so when we used command a chanel is opened and the data start exchanging. 
+
+Here we have three standard I/O chanel:
+    stdin: the standard input of program, usually keyboard is used
+    stdout: the stadard output of program, usually the terminal's display is used
+    stderr: the standard error message's output of program, like stdout usually terminal's terminal
+    is used
+
+In every command we hav these 3 to I/O.
+
+When user used the cat command without any argument the stdin will be opened and everything you input
+will be the stdout
+
+Standard Input リディレクトリ:
+    There is a thing called リディレクトリwhich mean changing the std I/O destination use < to 
+    activate it with cat and it will just output what is inputed (content of file). Maybe it is 
+    hard to understand now but afterward it will be very useful to create your own command
+    Ex:
+        "cat < /etc/crontab" != "cat /etc/crontab"
+
+Standard Output リディレクトリ:
+    
+    
+    
+
+
+
