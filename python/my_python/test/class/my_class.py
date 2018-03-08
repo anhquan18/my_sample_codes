@@ -1,3 +1,9 @@
+import sys
+
+sys.path.append('../')
+
+import check
+
 class Monster(object):
     def __init__(self, lv, hp, dfd, atk = 1):
         self.lv = lv

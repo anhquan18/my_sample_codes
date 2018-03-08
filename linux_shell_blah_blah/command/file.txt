@@ -1,0 +1,13 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Traceback (most recent call last):
+  File "err.py", line 4, in <module>
+    print sys.argv
+NameError: name 'sys' is not defined

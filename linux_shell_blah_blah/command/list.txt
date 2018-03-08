@@ -1,0 +1,12 @@
+total 40
+-rw-rw-r-- 1 nguyen nguyen  712  2月 23 14:47 alias.txt
+-rw-rw-r-- 1 nguyen nguyen 1103  3月  6 14:10 chanel.txt
+-rw-rw-r-- 1 nguyen nguyen  905  2月 28 16:59 chmod.txt
+-rw-rw-r-- 1 nguyen nguyen  947  2月 23 18:46 env.txt
+-rw-rw-r-- 1 nguyen nguyen 1301  3月  2 16:28 kill.txt
+-rw-rw-r-- 1 nguyen nguyen    0  3月  6 16:29 list.txt
+-rw-rw-r-- 1 nguyen nguyen 2226  2月 28 19:07 memo.txt
+-rw-rw-r-- 1 nguyen nguyen 1731  3月  2 14:42 ps.txt
+-rw-rw-r-- 1 nguyen nguyen   91  2月 22 16:46 search_command.txt
+-rwxr-x--- 1 nguyen nguyen   53  2月 22 16:49 search_file.txt
+-rw-rw-r-- 1 nguyen nguyen 1090  2月 23 15:46 set_shopt.txt

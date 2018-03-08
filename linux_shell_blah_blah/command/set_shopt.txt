@@ -8,7 +8,8 @@
         
         Ex: set -o ignoreeof (ignore ctrl+d use to avoid typing the wrong key and
         make the shell stop)
-        
+     
+    ##########
      Use man bash to search for more option to set(it's very very long so make 
      sure to use the / to find the word you need)
     

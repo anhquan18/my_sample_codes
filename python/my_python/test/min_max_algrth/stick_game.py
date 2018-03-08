@@ -58,8 +58,8 @@ def WinCheck(i_sticks, i_playerNum):
 
 
 if __name__ == '__main__':
-    i_stickTotal = 20
-    i_depth = 4
+    i_stickTotal = 10
+    i_depth = 3
     i_curPlayer = 1
     print 'INSTRUCTIONS: Be the player to pick up the last stick'+'\t'*3+'You can only pick up 1 or 2 or 3'+'\t'*3+'sticks at a time.'
     
@@ -67,7 +67,7 @@ if __name__ == '__main__':
         print '\n', i_stickTotal, ' sticks remain. How many would you like to pick up?'
         i_choice = input('\n1 or 2 or 3: ')
         i_stickTotal -= int(float(i_choice))
-        
+
         if WinCheck(i_stickTotal, i_curPlayer):
             i_curPlayer *= -1
             node = Node(i_depth, i_curPlayer, i_stickTotal)
@@ -85,4 +85,3 @@ if __name__ == '__main__':
             i_stickTotal -= bestChoice
             WinCheck(i_stickTotal, i_curPlayer)
             i_curPlayer *= -1
-
