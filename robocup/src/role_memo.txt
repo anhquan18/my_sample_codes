@@ -1,11 +1,13 @@
     ##############
     rcl.SoccerRole
     ##############
-    @Receive the id from kid.role.neutral then create a name_only function dict, and update that dict
-    with the _add_symbols func 
-    
+    @ABC of classes in role.py
+    @Receive the id from kid.role.neutral then create a name_only function dict, 
+    and update that dict with the _add_symbols func (overriden by the same one
+    in role.py - Attacker add atk, Keeper add keep)
 
     #########
     kid.role.Neutral
     #########
-     @First the Neutral role receive the id and then init by abc_Parent class rcl.SoccerRole
+     @First the Neutral role receive the id and then init by abc_Parent 
+     class rcl.SoccerRole 
