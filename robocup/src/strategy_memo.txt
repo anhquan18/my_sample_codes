@@ -6,7 +6,7 @@
     ### rcl.SoccerAgent ###
     There is a class named SoccerAgent which responsible for many action of the robot like: 
 create motion (play motion), play sound, 
- BRAIN to caculate (get time, error, QR, memorize, forget, get state to kick, change state, set pos, use yolo, planning the strategy, set switch)
+ BRAIN to caculate (get time, error, QR, memorize, forget, get state to kick, get the game_state, change state, set pos, use yolo, planning the strategy, set switch)
  get Self_State(set the ID, pos, maybe set kick), update, Observe... (change type, afti, arrpos, velo)
     
 
