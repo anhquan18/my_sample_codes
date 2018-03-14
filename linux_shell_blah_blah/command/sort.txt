@@ -1,0 +1,5 @@
+    A command that sort every output, you can sort it with size of file, field in 
+    ps, ASCII code order,...
+
+    Sort field number 5 in ps (command field)
+    Ex: ps -x | sort -k 5

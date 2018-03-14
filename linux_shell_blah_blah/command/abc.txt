@@ -1,0 +1,7 @@
+water
+count
+Apple
+Google
+Amazon
+bell
+Egg

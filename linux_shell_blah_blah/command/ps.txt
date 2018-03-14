@@ -13,7 +13,7 @@
  parent proccess and child proccess (Ex: excute ls command in shell will make 
  shell be the parent proccess and ls be the child)
 
-    ps will show you the running proccess. There will be some collums be outputed
+    ps will show you the running proccess. There will be some collums(field) be outputed
 which are:
 PID: proccess ID
 TTY: teletype terminals (you don't need to understand now but it is ready saved
