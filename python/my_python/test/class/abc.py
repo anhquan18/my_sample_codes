@@ -4,7 +4,7 @@ import abc
 
 class M_abc(object):
     __metaclass__ = abc.ABCMeta
-
+    @abc.abstractmethod
 M_abc.register(tuple) 
 
 assert issubclass(tuple, M_abc)

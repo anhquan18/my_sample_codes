@@ -1,0 +1,7 @@
+    There is a function called pipe_line in linux that help connect the output of a command to the 
+    input of another command (the thing that send the output of a command directly to other 
+    command). We use | symbol (pipe) to work with pipe line:
+        <command_1> | <command_2> [| <command_3...]
+     
+     And the stdout of c1 will be stdin of c2(which is parameter of c2) and if we have 3 same thing
+    
