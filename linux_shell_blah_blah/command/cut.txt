@@ -1,0 +1,6 @@
+    There is a command to the output well it's called cut. Read man to know better
+    Ex: cat /etc/passd| cut -d : -f 7
+        This mean show the content of the file above, cut off (split by the 
+        word) by : and only show field 7. Add other number to show other field 
+        rember to use the , between these number.
+     With cut you can cut the output as you want

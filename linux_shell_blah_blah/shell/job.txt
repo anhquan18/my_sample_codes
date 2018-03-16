@@ -32,4 +32,4 @@
      NOTE: all of these 3 are shell builtin command
 
     You can kill job like ps as well use:
-    kil %job's ID (kill %1)
+    kill %job's ID (kill %1)

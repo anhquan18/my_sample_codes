@@ -1,0 +1,22 @@
+    The command help you eliminate those repeated line keep appearing in the 
+    same file or in the output and return the new output. By default it only 
+    matching those repeated line that following each other
+
+    So if these line are repeated it will matching them in once, those line that
+    are seperated by others lines will not be count as repeated: try to sort these
+    You
+    Me
+    You 
+    I
+    I
+    I
+    Who
+    Who
+    Me
+
+    If you want to eliminate all of those same word you can use with sort and then
+    uniq the output, or you can just the option u of sort and sort will eliminate
+    those overlap things for you
+    If you to count or do other things to those duplication read the man to use 
+    options
+
