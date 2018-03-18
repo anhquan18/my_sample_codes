@@ -1,0 +1,25 @@
+Any time you create something (not for every time):
+    1. Know what you should do, need to do about the problem(write a map of it)
+        Write the way you want to do(realize if it has any problem, make a list 
+        of name for class, function)
+    2. Do some research about the problem, know the idea of how to make it work
+    3. Turn the thing you want to do into code( make sure use a class if you can)
+    4. Feeling lose and keep debugging and refine the code
+    5. Realize that you have already finished the problem
+
+
+#1,2 You should make a list of name for class and function and explain how they 
+       relate to each other (class relate to concepts)
+
+#3   Create class hierachy if you need. Create simple tree list of diagram then
+       put the name you create into that tree, make it fit. 
+       Write the sekeleton code for the tree and test if the class, concept 
+       running right or not, keep writting some little test for the code and make
+       it right
+
+#4   Keep running the code again and again to debug it and make it better use 
+       if any part of the code have any proble just running only that part and 
+       use some print to check the code
+ 
+#5   Relax and enjoy the code that you have finished, rest a bit and ready for
+       new project
