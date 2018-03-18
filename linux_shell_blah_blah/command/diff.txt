@@ -1,3 +1,6 @@
+    #######
+    Content
+    ####### 
     This command help you know the different between two files. Commonly used to 
     know the different before edit and after edited
     Ex: cp .bashrc bash.txt
@@ -18,3 +21,22 @@
         The < in the head of the line stand for lines in file 1
               > ... file 2
 
+    Note: one mass (things outputed) called hunk 
+
+    This one is very useful try it with the x_o_game you created
+
+    #######
+    Next
+    #######
+
+    Unified(become united, one) is an option -u of diff it will show you the two files being unified
+    in one and: 
+        @@@ : symbol stand at the head of each hunk (place changed) and there will be number 
+        like this @@ -21,8 +21,5 @@ stand for started place, number of lines have been changed
+        -   : stand for the deleted codes
+        +   : stand for the appeded codes
+     for short it show you something close to the one on github (git using the unified format)
+
+     The output(difference) that turn into a file called patch (I don't understand this part well).
+     But just remember that the diff and relate quite a lot to the version management and unified are
+     being used quite a lot (Ex: git)
