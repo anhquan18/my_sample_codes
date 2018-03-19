@@ -1,3 +1,4 @@
+# You can do the same thing with dictionary
 l = [x for x in range(10)]
 print l
 
