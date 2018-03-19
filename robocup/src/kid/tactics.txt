@@ -1,0 +1,39 @@
+     Tactic file have the tactic of all three role atk, def, neutral
+
+    Inside the tactic of each role we have the action list: 
+        +Attacker:
+                 kick_ball
+                drible
+                adjust_to_kick
+                turn_around_ball
+                approach_bal
+                localize
+                search_close_ball
+                idle_kick_off
+                track_ball
+         
+         +Deffender:
+                localize
+                approach
+                track_ball
+
+        +Neutral:
+                approach_close_ball
+                search_far_ball
+                track_ball
+                localize
+                iddling
+
+        +Keeper:
+                kick_ball
+                dribble
+                adjust_to_kick_pos
+                turn_around_ball
+                approach_ball
+                approach_target_pos
+                localize
+                search_close_ball
+                idling
+                track_ball
+                keeper_motion
+
