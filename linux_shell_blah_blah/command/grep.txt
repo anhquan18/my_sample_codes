@@ -17,19 +17,18 @@
 
 
     ###################
-    Regular Expression
-    ###################
+    Regular Expression:
 
      Regular expression are series of symbols that help you represent some meaning when it come to 
      string( like regular expresion in python). These have special meaning and they are called meta 
      character, all of these characters have special meaning for both shell and official expresion
      so in order not to activate the special meaning in shell and to activate the special meaning in
      official expresion we add single quote to it
+    ###################
 
 
     ##############
     Meta character
-    ##############
 
     .  : will match one any character (Ex: ls | grep'word.', you can use it more than one time to
            match any character Ex: ls |grep 'bas...', 'a...d','..o.txt')
@@ -59,14 +58,14 @@
            Another use to mix other metacharacter grep '^B[ea]$', grep '^B.*'
 
      [^]: match any of the character except those in the bracket Ex: [^1-9]
+    ##############
   
     ########
-    Expasion RE (Regular Expression)
-    ########
+    Extended RE (Regular Expression)
     
     It's a little bit different from RE, just like the name of it with this we can use many more 
     metacharacter but the syntax is a little bit different from normal RE so you remember to use 
-    it seperate. To use the Expasion with grep you add -E to it (expasion not normal anymore)
+    it seperate. To use the Extended with grep you add -E to it (expasion not normal anymore)
         Ex: grep -E 'Be+r' file_name (using the + metacharacter from Expasion RE)
     
     @Note: Seem like the grep command using in Linux (GNU grep) can still using the expasion meta 
@@ -92,10 +91,12 @@
           Ex: grep 'Be\{2,\}r' will mean match more than 2 times
                grep 'Be\{2\}r' match exact 2 times
                grep -E'0[0-9]0 (([0-9]{4}) ?){2}' search phone number  
+    ########
 
     #####
-    Note
-    #####
+    Note:
+
     There is a lot of strong metacharacter find about it on the internet later
+    #####
 
 

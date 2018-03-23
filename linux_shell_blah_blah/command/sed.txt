@@ -1,0 +1,76 @@
+    This a command stand for stream editor is a non-interactive editor big different from vim or
+    note,... Here we have how it flows:
+        1. We give sed the command we use to edit as a parameter
+        2. sed run the command gived on the target'll be edited
+        3. After that it output the result
+    And you can also use regular expression with sed.
+
+    ######
+    Note: sed won't edit the original file but instead output the edited  version into the stdout
+    ######
+
+    With this you can edit a file or the output of other command
+
+    Use:
+        sed [options] <script> <file,...>
+
+            script: is combined by command and address(without address it will match the whole file)
+            address: can be one number stand for the line or started line, finished line(finished 
+                        line can be bigger than the number of line that really exist)
+            Ex: sed 1,5d sample.txt  -> in here 1,5 is the address and d is the command
+                  sed 's/aaa/bbb/g' sample.txt -> the address part isn't written, s is command, 
+                                                            /aaa/bbb/ is parameter, g is plug
+             Command:   
+                 d: delete 
+                 p: print 
+                 s: substitute first word (s/before_chara/after_chara/) with plug g it will change 
+                    matching words
+             
+             Add with single quote:
+                $: last line
+
+            RE (slash /):
+                ^+ word: head of the line start with word or character
+             \ back slash:   
+                ()     : to group word (used with \1 to call out the word grouped)
+
+    #####
+    Note: 
+    sed have many command that is why you should search about it and write more into this file
+    when using s you should add single quote to it inorder to read easily
+    if you use s like this Ex: sed s/A.*//g will mean that delete every word start with A so 
+    becarefulhttp://game-a.granbluefantasy.jp/assets/img_mid/sp/comic/beginnercomic/thumbnail/thumbnail_1.png http://game-a.granbluefantasy.jp/assets/img_mid/sp/comic/beginnercomic/thumbnail/thumbnail_1.png h
+    #####
+
+    Try:
+        sed 3d abc.txt                  delete the 3rd line
+        sed 5,1000d abc.txt             delete line 5-1000
+        sed '2,$d' abc.txt              delete line 5-last line
+        sed d abc.txt                   delete the file
+        sed /^Amazon/d abc.txt          delete the line start with Amazon
+        sed /^A/p abc.txt               print line start with A
+        sed -n 2p abc.txt               suppress the automatical print and print 2nd line
+        sed s/Apple/Window/ abc.txt     substitute Apple to Window
+        sed s/o/e/ abc.txt              change o char to e (this won't work effectively because it
+                                                   only replace the first character it found in one 
+                                                   line
+         sed s/o/e/g abc.txt
+         sed s/A.*e/g abc.txt            change with RE
+         sed s/Wi+w/Apple abc.txt        add -r option when want to use the extended RE or \
+         sed s/Wi\+w/Apple abc.txt
+        sed '5s/(M.) (W.*w)/__\1__\2__/' abc.txt
+
+     ######
+     Explantion:
+
+    the way command p output in sed a little bit different is because first it coppy the output, file
+    to the pattern space at last it run the command in single line one by one -> that is why it look
+    a little bit different. Normally if you won't do anything it will automatically print the file,
+    output
+     ######
+
+     ########
+     Note: we have been using slash to seperate the word when using s in sed but we don't actually
+     have to use the / to seperate them you can just put a character after s and bash will 
+     automatically know that it is the character to seperate word Ex: sed 's|W.*|/Yay/|' abc.txt
+     ########

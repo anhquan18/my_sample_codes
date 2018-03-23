@@ -1,7 +1,13 @@
 water
+Window
 count
 Apple
+My Window
+Window
+My Linux
+Linux
 Google
 Amazon
+Linux
 bell
 Egg
