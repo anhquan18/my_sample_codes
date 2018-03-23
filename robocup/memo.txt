@@ -6,6 +6,9 @@
     Learn about GOAP
     Learn how to create small version of the source code
     Learn some more about python 3(.5, .6, .7, .8)
+    Read Joshua senpai github
+    Learn probalistic
+
 
 
     You are studying rcl.SoccerAgent, rcl.WorldState, goal, HLKids.., sample1, role
