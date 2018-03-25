@@ -8,9 +8,10 @@
     Learn some more about python 3(.5, .6, .7, .8)
     Read Joshua senpai github
     Learn probalistic
+    Learn A*, distrak..., 
 
 
 
-    You are studying rcl.SoccerAgent, rcl.WorldState, goal, HLKids.., sample1, role
+    You are studying rcl.SoccerAgent, rcl.WorldState, goal, HLKids.., sample1, role, hlposem
 
     
