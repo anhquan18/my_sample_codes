@@ -68,7 +68,11 @@ class Alien(Monster):
             super().__init__(lv,hp,dfd,atk)
         except Exception:
             pass
-        self.tail = self.Tail(self.atk, 4000, 400)
+        self.__tail = self.Tail(self.atk, 4000, 400)
+    
+    @property
+    def tail(self):
+        return self.__tail
     
     def introduce(self):
         print ("I'm an alien, Woohoo")
