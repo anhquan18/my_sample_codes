@@ -1,0 +1,12 @@
+    Is a file that has shell's command in it. You should learn to write in bash at first, after that 
+    learn how to use zsh
+
+    When you create a bash(or shell file not sure) you have to add shebang (#!) at the head of the 
+    file before /bin/bash. When you ./file.sh the linux kernel will read the head of the file first
+    and when it see #! that mean execute the command behind it which mean execute /bin/bash.
+
+    And so we have '#!/bin/bash' mean that run shell script in /bin/bash, and the name of the file 
+    will be the parameter for /bin/bash and /bin/bash will run the file, thanks to shebang you don't
+    have to write out the /bin/bash any more. 
+    . This is the role of shebang:
+    "./file.sh" -> "/bin/bash ./file.sh"
