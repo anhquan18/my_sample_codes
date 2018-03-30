@@ -26,7 +26,9 @@ for i in range(2, 8):
 
 print num
 
-
+a = lambda x: x == 3 and x % 3
+print 'printing a'
+print a(11)
 #change word to length
 words = 'It is a beautiful day'.split()
 length = map(lambda x: len(x), words)

@@ -30,6 +30,10 @@ class Monster(object):
         self.atk /= 4 
         self.dfd /= 4
         self.color = 'green'
+    
+class Action(object):
+    def roar(self, name):
+        print "I'm going to kill you", name
 
 
 class Alien(Monster):
@@ -54,6 +58,7 @@ class Alien(Monster):
     def __init__(self, lv, hp, dfd, atk):
         # Do this you can still call out the Alien self.atribute
         Monster.__init__(self,lv, hp, dfd, atk)
+        self.action = Action()
         print 'First atk:', self.atk
         print 'Oh, you missed'
         super(Alien, self).status()
@@ -65,9 +70,11 @@ class Alien(Monster):
             pass
         self.tail = self.Tail(self.atk, 4000, 400)
     
-    def call(self):
+    def introduce(self):
         print ("I'm an alien, Woohoo")
     
+    def roar(self, name):
+        return self.action.roar(name)
 
 
 if __name__ == '__main__':
@@ -79,4 +86,5 @@ if __name__ == '__main__':
     #Alien.call(predator)
     predator.tail.swing()
     me = predator
-    me.call()
+    me.introduce()
+    me.roar('Quan')
