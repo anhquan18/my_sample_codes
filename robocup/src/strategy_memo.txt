@@ -13,7 +13,7 @@ create motion (play motion), play sound,
     ### rcl.WorldState ###
     Get all the game state, object like ball, robot(our, enemy), list of objects
     (ball, last_visible_ball, goal_pole, robot_our, robot_enemy by using number)
-    and get a class called self_state from rcl.SoccerAgent.SelfState(get self ID, tilt, hlkick_off_state)
+    and get a class called self_state from rcl.SoccerAgent.SelfState(get self ID, tilt, hlkick_off_state, self_position)
     and get a class called switch_state from rcl.SoccerAgent.Switch_State(reveive a list of state_ID)
 
     ### kid.stategy.HLKidstrategy ###

@@ -123,7 +123,18 @@ export PS1="\[\033[01;32m\]\h@\u:\[\033[01;34m\]\w\[\033[01;35m\][\$(git branch 
 
 # alias
 alias la='ls -a'
+alias l='ls -l'
 alias history='history |less'
+alias vimrc='vi ~/.vimrc'
+alias bshrc='vi ~/.bashrc'
+alias mwrk='cd ~/git/my_file/my_work/'
+alias mgame='cd ~/git/my_file/my_pygame/'
+alias citser='ssh -p 443 citbrains@www.robocup.it-chiba.ac.jp'
+alias pyfile='cd ~/git/robocup_cit/for2050/src/pyfiles'
+alias acmd='compgen -c'
+alias cbas='cp .bashrc bashrc.txt'
+alias pwoff='sudo poweroff -p'
+alias mvbsrc='mv bashrc.txt ~/git/my_file/my_work/linux_shell_blah_blah/bash/'
 
 # shell option
 set -o noclobber
