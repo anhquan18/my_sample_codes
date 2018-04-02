@@ -134,6 +134,7 @@ alias pyfile='cd ~/git/robocup_cit/for2050/src/pyfiles'
 alias acmd='compgen -c'
 alias cbas='cd ~/ && cp .bashrc bashrc.txt && mv bashrc.txt ~/git/my_file/my_work/linux_shell_blah_blah/bash/'
 alias pwoff='sudo poweroff -p'
+alias rbot='sudo reboot'
 alias mkbas='mv ~/git/my_file/my_work/linux_shell_blah_blah/bash/bashrc.txt ~/ && cd ~/ && mv bashrc.txt .bashrc'
 
 # shell option
