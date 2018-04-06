@@ -7,3 +7,4 @@
     Read machine learning book
     Read the things you learned in the first year again
     Learn openCV, ROI(Regions of interest), ConvNet(Convolutional Neural Network)
+    Learn about computer network, socket(python)

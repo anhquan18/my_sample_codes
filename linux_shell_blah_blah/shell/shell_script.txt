@@ -30,3 +30,5 @@
     if  you run the shell script with source command the current shell will be affected by whatever
      the script do, on the other hand, if you run it with 1st or 2nd way the scipt itself won't 
      affect to the current shell since it runned on the sub shell. So make sure to use the right way
+
+     If you want to add the path to the $PATH you can add PATH='$PATH:~/bin' to bashrc
