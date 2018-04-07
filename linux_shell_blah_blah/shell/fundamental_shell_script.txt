@@ -1,0 +1,55 @@
+    ########
+    Use and Explanation
+    ########
+    
+    # New line 
+    You can use ; to execute many command in one line
+                    \ to keep writing the code in a new line
+     
+     When you execute 'echo \' the prompt will change from $ to > it mean the command line still 
+     haven't finished, input something. This is the secondary prompt, you can customize it with PS2 
+     var, input \ then another line will come out, enter to finish this
+     Ex: echo \ 
+          "hello \
+          world"
+
+     You can do the same thing with | pipe line
+     Ex: ls |
+          sort
+
+
+     # Variable
+     Shell have var to storage value like other programming language as well, it's called shell var.
+     To reference the value of var we add $ to the head of the var
+     Ex: var='Hello Me'
+          echo $var
+
+     Remember that the do not add $ to the head var when subtitute the value to var, and do not add 
+     space before or after the = symbol, you can use both upper case and lower case letter for var, 
+     but normally Upper stand for enviroment var and lower case stand for normal var
+     
+     This is an example of a fault case:
+     filename=J.Johnson
+     echo $filename_backup  #If we do this then nothing will be output because you are calling an 
+     unexist var. To fix this you add {} to the var and shell will understand that you are calling 
+     out the var
+     echo ${filename}_backup
+
+
+     # Quotes
+     With quotes you can tell to shell that any thing inside it is a word like this:
+     ' or " can be fine, vi 'This whole thing is a word'.txt
+     And meta character is meaningless inside quotes. But  there is an exception with ' and "
+     Ex: country=Japan
+          echo 'We are in $country' $ is meaningless inside single quote
+          echo "We are in $country" but in double quotes it mean calling out the var
+     You can use \ to disable the meaning of $ inside "
+
+    # Command substitution
+    It is a little bit like stdout, thanks to this we can get the result of a command as a string 
+    All you have to do is put the command whose result you want to get inside $( ) and the whole
+    $(command_name) will be replace as the stdout of the command
+    Ex: list=ls
+          echo $list
+
+          Now we will try an example with date command
