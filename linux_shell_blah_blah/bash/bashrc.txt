@@ -136,6 +136,7 @@ alias cbas='cd ~/ && cp .bashrc bashrc.txt && mv bashrc.txt ~/git/my_file/my_wor
 alias pwoff='sudo poweroff -p'
 alias rbot='sudo reboot'
 alias mkbas='mv ~/git/my_file/my_work/linux_shell_blah_blah/bash/bashrc.txt ~/ && cd ~/ && mv bashrc.txt .bashrc'
+alias profile='vi ~/.bash_profile'
 
 # shell option
 set -o noclobber
@@ -143,3 +144,6 @@ set -o noclobber
 # enviroment var
 HISTSIZE=10000
 HISTFILESIZE=10000
+
+#add PATH
+export PATH="$PATH:~/mybin"

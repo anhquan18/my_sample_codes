@@ -32,3 +32,5 @@
      affect to the current shell since it runned on the sub shell. So make sure to use the right way
 
      If you want to add the path to the $PATH you can add PATH='$PATH:~/bin' to bashrc
+
+
