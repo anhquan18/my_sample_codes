@@ -65,3 +65,32 @@
          fi
 
     And so you can use some command's option that return the exit status with if as well
+    
+
+    ##### Test command
+    Like the [ command this command have the same function as the [ only different that it doesn't
+    need the ] at last.
+    Ex: 
+        if [ "$1" = "bin"]; then
+         if test "$1" = "bin"; then
+
+    [ doens't have a sound that why both [ and test are called the test command
+
+    ## Comparison
+    1. String:
+        str1 = str2  : str1 equal to str2
+        str1 != str2 : str1 isn't equal to str2
+        -n str1      : str1 isn't empty string
+        -z str1      : str1 is empty string
+
+     Try default.sh file
+
+     2. Integer
+        int1 -eq int2 : int1 == int2
+        int1 -ne int2 : int1 != int2
+        int1 -lt int2 : int1 < int2
+        int1 -le int2 : int1 <= int2
+        int1 -gt int2 : int1 > int2 
+        int1 -ge int2 : int1 >= int2
+        
+
