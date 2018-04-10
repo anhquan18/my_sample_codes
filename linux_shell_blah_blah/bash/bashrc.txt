@@ -146,4 +146,4 @@ HISTSIZE=10000
 HISTFILESIZE=10000
 
 #add PATH
-export PATH="$PATH:~/mybin"
+export PATH="$PATH:~/bin"
