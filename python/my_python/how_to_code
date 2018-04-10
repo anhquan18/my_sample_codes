@@ -1,3 +1,4 @@
+Top down proccess
 Any time you create something (not for every time):
     1. Know what you should do, need to do about the problem(write a map of it)
         Write the way you want to do(realize if it has any problem, make a list 
@@ -23,3 +24,17 @@ Any time you create something (not for every time):
  
 #5   Relax and enjoy the code that you have finished, rest a bit and ready for
        new project
+
+
+ Bottom up proccess(only do this when you know the problem)
+    1. Take a small piece of the problem; hack on some code and git it run barely.
+    2. Refine the code into something more formal with classess and automated 
+    tests.
+    3. Extract the key concepts you're using and try to find research for them
+     4. Write up a description of what's really going on.
+    5. Go back and refine the code, possibly throwing it out and starting over.
+    6. Repeat, moving on to some other piece of the problem
+
+Use this proccess to solve small piece of overall puzzle but maybe don't know
+enough to solve all of the problem just do it one by one and then refine the
+solved puzzle

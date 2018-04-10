@@ -23,11 +23,11 @@ class WorldStatus(object):
 class FSM(object):
     def __init__(self,world_status):
         self.world = world_status
-        self.states_list = {\
+        self.states_list = {
                        'Patrol':self.Patrol,
                        'Reload': self.Reload,
                        'Approach': self.Approach,
-                       'Shoot' : self.Shoot
+                       'Shoot' : self.Shoot,
                        'HP' :self.HP
                            }
         self.state = 'Patrol'
@@ -74,7 +74,7 @@ class FSM(object):
             self.state = 'Patrol'
 
     def HP(self):
-        self.HP = 
+        self.HP = 200
 
     def Shoot(self):
         #Process
