@@ -94,3 +94,22 @@
         int1 -ge int2 : int1 >= int2
         
 
+    3. File_type
+    These are various type of operators to evaluate type of file( find more detail in bash manual - conditional expressions)
+
+    -e file         : file exist
+    -d file         : file exist and is dir
+    -h file         : file exist and is symbolic 
+    -L file         : file exist and is symbolic (like -h)
+    -f file         : file exist and is normal file
+    -r file         : file exist and is readable file
+    -w file         : file exist and is writable file 
+    -x file         : file exist and is executable file
+    file1 -nt file2 : file 1 updated time is newer than file 2 
+    file1 -ot file2 : file 1 upadted time is older than file 2
+
+    When you want to use many condition at the same time 
+    condition1 -a condition2: cond1 AND cond2
+    condition2 -o condition2: cond1 OR cond2
+    ! cond                  : cond fault
+    ()                      : group cond

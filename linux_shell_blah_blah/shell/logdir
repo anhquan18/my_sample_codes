@@ -1,0 +1,15 @@
+#!/bin/bash
+
+logdirs=/home/osumi/myapp/logs
+
+if [ -d "$logdir"  ]; then 
+    echo "logdir is : $logidr"
+else 
+    echo "[ERROR] logdir is not exist: $logdir"
+fi
+
+if [ -d type cat ]; then
+    echo type worked
+else 
+    echo type not worked
+fi
