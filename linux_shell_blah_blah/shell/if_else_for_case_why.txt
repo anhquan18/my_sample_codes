@@ -1,0 +1,96 @@
+    ##### if 
+    
+    You can use both space or tab to indent the script
+    Like normal programming language the if statement work like others. Read the if_bin.sh file
+    
+    First you have to put the space between if and [], you must add then after if or elif script
+    to make to script work seem like the script itself need something to indent.
+
+    Second if and elif in shell script don't have condition it may seem like they are using it but
+    actually in shell script the things come after if is a command
+    Ex:
+        if <command1>; then
+            do something
+        elif <command2>; then
+            do something
+        elif <command3>; then
+            do something
+        else
+            do something
+        fi
+
+     Always end the if statement with fi to state that the if end here
+     
+     Before and after the command we have the [] it is not just a bracket but actually the shell 
+     builtin command (try type [ interminal)
+     if [ "$1" = "bin" ]; then
+     with [     : command
+           "$1"  : arg1
+           =     : arg2
+           "bin" : arg3
+           ]     : arg4
+    
+    ##
+    Exit status
+    ##
+
+    Every command in shell return an interger value called status exit when it has exited. And the 
+    shell's var stand for this is '$?'
+    Ex: ls      # execute ls
+          echo $? # output the exit
+    
+    Normally the exit status of a command is 0, when there is error will be a number not 0. Try the
+    s_status.sh file when the error happened the exit status is 2
+
+    ########
+    NOTE: all of the exit status's interger of each command have a meaning for it read the man of 
+    each command to know what it is 
+    Ex: the exit status of ls above is 2 and based on the ls's man page 2 mean that error: can't 
+    access something
+    ########
+
+    And after the if statement will judge the condition(command) right or wrong, it will return an
+    exit status: 
+        0 : mean True
+        1 : mean False
+        
+        Kind of reverse what we learned in other programming language
+
+     Like I said before the condition for if statement in shell is a command that is why we can use 
+    a command for the if statement like this:
+        #!/bin/bash
+
+        if grep -q 'bash' /etc/passwd; then   #In here if the grep found bash in /etc/passwd then -q option will exit with 0 status, else with error(Not sure about the else)
+            echo 'bash found'                  # echo bash
+         fi
+
+    And so you can use some command's option that return the exit status with if as well
+    
+
+    ##### Test command
+    Like the [ command this command have the same function as the [ only different that it doesn't
+    need the ] at last.
+    Ex: 
+        if [ "$1" = "bin"]; then
+         if test "$1" = "bin"; then
+
+    [ doens't have a sound that why both [ and test are called the test command
+
+    ## Comparison
+    1. String:
+        str1 = str2  : str1 equal to str2
+        str1 != str2 : str1 isn't equal to str2
+        -n str1      : str1 isn't empty string
+        -z str1      : str1 is empty string
+
+     Try default.sh file
+
+     2. Integer
+        int1 -eq int2 : int1 == int2
+        int1 -ne int2 : int1 != int2
+        int1 -lt int2 : int1 < int2
+        int1 -le int2 : int1 <= int2
+        int1 -gt int2 : int1 > int2 
+        int1 -ge int2 : int1 >= int2
+        
+

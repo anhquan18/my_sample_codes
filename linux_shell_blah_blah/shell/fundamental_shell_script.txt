@@ -1,8 +1,8 @@
-    ########
     Use and Explanation
     ########
     
-    # New line 
+
+    ##### New line 
     You can use ; to execute many command in one line
                     \ to keep writing the code in a new line
      
@@ -18,7 +18,7 @@
           sort
 
 
-     # Variable
+     ##### Variable
      Shell have var to storage value like other programming language as well, it's called shell var.
      To reference the value of var we add $ to the head of the var
      Ex: var='Hello Me'
@@ -36,7 +36,7 @@
      echo ${filename}_backup
 
 
-     # Quotes
+     ##### Quotes
      With quotes you can tell to shell that any thing inside it is a word like this:
      ' or " can be fine, vi 'This whole thing is a word'.txt
      And meta character is meaningless inside quotes. But  there is an exception with ' and "
@@ -45,11 +45,37 @@
           echo "We are in $country" but in double quotes it mean calling out the var
      You can use \ to disable the meaning of $ inside "
 
-    # Command substitution
+    
+    ##### Command substitution
     It is a little bit like stdout, thanks to this we can get the result of a command as a string 
     All you have to do is put the command whose result you want to get inside $( ) and the whole
     $(command_name) will be replace as the stdout of the command
-    Ex: list=ls
-          echo $list
+    Ex: echo $list
 
-          Now we will try an example with date command
+          Now we will try an example with date command. Specify the date command's argument like 
+          this (don't even understand) +%Y-%m-%d then the output can be YYY-MMM-DDD. With this you
+          can create dir with today date as the dir's name like this:
+            d_name=$(date "+%Y-%m-%d")
+            mkdir "$d_name"
+     You can also use `` as the same meaning as $()
+     Ex: echo "we have $(ls)" is echo "we have `ls`"
+
+
+    ##### Position argument
+    Till now we have used many kind of argument for the command line in shell like file, output,dir.
+    Shell treats all of them as the position argument, shell's var. All of them stand in order like
+    this : ./argument.sh aaa bbb ccc
+                    $0         $1  $2  $3
+     The $0 is one of the special argument, try the file outside(you can also try the * to see it)
+     And you can know the number of position you have been inputed in shell script by echo the 
+     special var '$#' in the last line of shell script
+
+    Normally the position argument will be splited out automatically. But with '$@' or '$*' you can
+    summarize all of the argument into one try the argument file. It seem that @ and * do the same
+    thing but when surrounded by " they are not at all. If we have the total number of pos argument
+    then they will expand the pos arg like this:
+    "$@": "$1" "$2" ... "$N"
+    "$*": "$1 $2 $3 ... $N"
+    
+    $@ are mostly used 
+

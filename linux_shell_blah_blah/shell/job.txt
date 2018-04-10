@@ -1,4 +1,3 @@
-    Each command you run in terminal is a ps (If you do this:
     ls -l / | cat -n | less -> this will be one line that have three ps)
 
     From shell if it is one line it will be counted as one job
