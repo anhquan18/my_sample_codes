@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Seem like printf don't work good with $@
+printf "$@\n"
+
+echo $@

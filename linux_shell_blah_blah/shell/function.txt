@@ -1,0 +1,23 @@
+    ##### Function
+    Like other programming language we have function to do the stuff we need, in
+    shell script it is little bit like alias
+    Ex:
+        function <function_name> ()
+        {
+            proccess
+         }
+     You can remove the () part as well or even the function statement
+        function <function_name>
+        {
+            proccess
+        }
+
+        <function_name> ()
+        {
+            proccess
+         }
+
+         Try testunc file
+
+     Note: You have to define the function in the line before the line you execute
+     the function

@@ -3,3 +3,5 @@
 if grep -q 'bash' /etc/passwd; then
     echo bash
 fi
+i=2
+printf "$i"

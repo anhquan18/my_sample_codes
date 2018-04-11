@@ -1,0 +1,53 @@
+    ##### For
+    for loop use loop proccess kind of like python 
+        for var in list
+         do
+             proccess
+         done
+     
+     Ex:
+        for name in aaa bbb ccc
+         do
+              echo $name
+        done
+
+    When you want to use all the .txt file in current dir you can put all of them
+    into the list like what we do s_status file
+
+    And you can also place command instead of a list as well. In here, we have a 
+    command called "seq" which print out a sequence of numbers we can use it to
+    create a list
+    try try_for file
+
+    You can output all of the pos parameter of the file by using the $@ 
+    Ex:
+     for parameter in $@
+    do 
+        echo $parameter
+    done
+
+    You can remove the in list of for loop and the $@ will be the default of for
+    Ex:
+        for para in $@
+         for para 
+         Is two same thing
+         
+
+    ##### While
+    while loop just like while loop like other programming language
+     Ex:
+        while <command>
+         do
+             loop proccess
+        done
+
+    ##### Calculation operator
+    You can use $(()) or let "" to do the calculation you need search more about
+    it 
+    Ex: 
+        i=0
+        i=$((i + 10 * 10 - 10 / 2))
+        echo $i
+
+        let "i * 2 + 10 / 2 - 15"
+        echo $i

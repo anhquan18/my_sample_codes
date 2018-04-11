@@ -1,0 +1,17 @@
+    case is kind of like the switch function and we have pattern, if pattern match
+    it execute the code inside ) and ;; it start with case and end with 
+    esac (inverted version of case)
+    Ex:
+        case <string> in
+            <pattern1>)
+                proccess1
+                ;;
+             <pattern2>)
+                proccess2
+                ;;
+             ...
+        esac
+
+    Try esac file
+    And you can use | to have multiple pattern in one line as well and if pattern
+    match one or another the proccess will be executed
