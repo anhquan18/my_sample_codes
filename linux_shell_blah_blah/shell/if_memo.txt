@@ -29,3 +29,10 @@
      the last command
 
      try exit file 
+
+     You can return the exit status from function as well 
+     Ex: 
+        func ()
+        {
+            return 0
+        }   

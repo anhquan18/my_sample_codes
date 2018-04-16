@@ -112,4 +112,15 @@
     condition1 -a condition2: cond1 AND cond2
     condition2 -o condition2: cond1 OR cond2
     ! cond                  : cond fault
-    ()                      : group cond
+    ()                      : group cond (you need to add \ to ( because ( is a bash's meta 
+                                       character 
+        Ex: if [ -d "$watever" -a \( "$watever" = '/bin' -o "$watever" =  "/etc") ]; then
+                  echo something
+
+    ### && and ||
+    This two help you run multiple command at the same time:
+     cmd1 && cmd2  : when cmd1 finished and the exit status is 0 the use cmd2 which mean that if 
+                          command 1 finished normally then the command 2 will be executed
+        Ex:  [ -f file.txt ] && cat file.txt
+
+    cmd1 || cmd2  : 
