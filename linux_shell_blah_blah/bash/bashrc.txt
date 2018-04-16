@@ -94,7 +94,7 @@ alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e "\"'s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e "\""s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//"\"")"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -120,25 +120,6 @@ fi
 #PS1='\[\033[01;35m\] \d \[\033[01;32m\] \h@\u:\[\033[01;34m\]\n\w\[\033[0m\] \$ '
 
 export PS1="\[\033[01;32m\]\h@\u:\[\033[01;34m\]\w\[\033[01;35m\][\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)]\[\033[0m\]\$ "
-
-# alias
-alias la='ls -a'
-alias l='ls -l'
-alias history='history |less'
-alias vimrc='vim ~/.vimrc'
-alias bashrc='vim ~/.bashrc'
-alias mwrk='cd ~/git/my_file/my_work/'
-alias mgame='cd ~/git/my_file/my_pygame/'
-alias citser='ssh -p 443 citbrains@www.robocup.it-chiba.ac.jp'
-alias pyfile='cd ~/git/robocup_cit/for2050/src/pyfiles'
-alias acmd='compgen -c'
-alias cbas='cd ~/ && cp .bashrc bashrc.txt && mv bashrc.txt ~/git/my_file/my_work/linux_shell_blah_blah/bash/'
-alias pwoff='sudo poweroff -p'
-alias rbot='sudo reboot'
-alias mkbas='mv ~/git/my_file/my_work/linux_shell_blah_blah/bash/bashrc.txt ~/ && cd ~/ && mv bashrc.txt .bashrc'
-alias profile='vim ~/.bash_profile'
-alias cvim='cp ~/.vimrc ~/vimrc.txt && mv ~/vimrc.txt ~/git/my_file/my_work/vim_code/'
-alias mkvim='mv ~/git/my_file/my_work/vim_code/vimrc.txt ~/ && mv vimrc.txt .vimrc'
 
 # shell option
 set -o noclobber
