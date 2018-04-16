@@ -8,4 +8,4 @@
     Learn openCV, ROI(Regions of interest), ConvNet(Convolutional Neural Network)
     Learn about computer network, socket(python)
     Learn python platform, espeak module
-    Learn tmux, tig
+    Learn tmux, tig, nmap, neocomplete
