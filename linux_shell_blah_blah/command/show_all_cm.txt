@@ -1,1 +1,0 @@
-use compgen -c to show all of the command you can run

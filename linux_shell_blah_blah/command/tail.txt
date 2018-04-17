@@ -1,4 +1,0 @@
-    This command kind of reverse the thing you can do with head. Read man
-
-    With -f you can know the change of the file in realtime, it show you where the
-    last place the cursor is

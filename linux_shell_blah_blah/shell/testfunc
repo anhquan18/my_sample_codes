@@ -1,9 +1,0 @@
-#!/bin/bash
-
-home ()
-{
-    date "+%Y-%m-%d"
-    homesize
-}
-
-home
