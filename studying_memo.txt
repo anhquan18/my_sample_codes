@@ -1,11 +1,11 @@
     Learn probalistic 
-    Learn shell script
+    Learn shell script (almost done the basic)
     Read Joshua senpai github
     Learn Goap
-    Learn python the hard way
+    Learn python the hard way, anacondo module
     Read machine learning book
     Read the things you learned in the first year again
     Learn openCV, ROI(Regions of interest), ConvNet(Convolutional Neural Network)
     Learn about computer network, socket(python)
     Learn python platform, espeak module
-    Learn tmux, tig, nmap, neocomplete
+    Learn tmux, tig, nmap, neocomplete, docker
