@@ -1,0 +1,18 @@
+    The stategy inside kid have only a class HLKidstrategy stand for the strategy of the kid robots
+
+    #######
+    HLKidstrategy
+    #######
+
+    Function:
+    1. __init__ will :
+        run the init of the parent abc rcl.Strategy to get the base of a strategy that has common_string, goal_symbol_list, synbol_dict, action_list, task_tree, update, create_field_properties, create_motion, get_target_arrpos_gl
+        set goal_cls to know_self_pos
+        set role_cls to neutral
+        set common_string to ""
+    2. decide_role:
+        set role to keeper if world_state.mode is goal_keeper
+        set role to neutral if not know_self_pos or game_state isn't playing
+        set role to free_kick if secondary_state is indirect_freekick or direct_free_kick
+
+        get ball_pos_gl, check other player 

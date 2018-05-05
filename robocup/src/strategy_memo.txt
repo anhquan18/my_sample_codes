@@ -19,8 +19,3 @@ create motion (play motion), play sound,
     ### kid.stategy.HLKidstrategy ###
     __init__ will receive the ID, list object from goal.KnowSelfPos, role 
 
-    ### Strategy ###
-    Robot is: 
-        1. Boot with kid.stratergy.HLKids...() first to receive the ID, list of object from 
-            rcl.WorldState from goal.KnowSelfPos
-         2. Receive SoccerAgent from rcl
