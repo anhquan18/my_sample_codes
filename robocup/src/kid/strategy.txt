@@ -10,9 +10,15 @@
         set goal_cls to know_self_pos
         set role_cls to neutral
         set common_string to ""
+    
     2. decide_role:
         set role to keeper if world_state.mode is goal_keeper
         set role to neutral if not know_self_pos or game_state isn't playing
         set role to free_kick if secondary_state is indirect_freekick or direct_free_kick
 
         get ball_pos_gl, check other player 
+
+    3. update:
+        save old role and get new one  {through self._decide_role}
+        save old goal and get new goal {through role(SoccerRole).goal = get_updated_goal, the goal will be just one and will be decided in role.py, te goal returned will
+                                       be the one that created in goal.py}
