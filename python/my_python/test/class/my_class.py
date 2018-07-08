@@ -92,3 +92,9 @@ if __name__ == '__main__':
     me = predator
     me.introduce()
     me.roar('Quan')
+    print Alien.__name__
+    print Alien.__doc__
+    print predator.__dict__
+    print predator.__class__
+    print predator.__class__.__name__
+

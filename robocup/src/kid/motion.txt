@@ -1,0 +1,16 @@
+    This file contain hr46 class that has all of the motions for the robot:
+        accurate_walk
+        accurate_one_step
+        cancel
+        right_kick
+        reverse_right_kick
+        reverse_left_kick
+        strong_right_kick
+        strong_left_kick
+        high_left_kick
+        high_right_kick
+        turn_neck
+        play_sound
+        keeper_center
+        keeper_right
+        keeper_left
