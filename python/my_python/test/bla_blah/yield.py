@@ -10,9 +10,9 @@ def create_generator(a, b):
             print 'inside loop,', c
             c += 1
             yield a, b
-        while True:
+        '''while True:
             yield [a, c]
-            print 'after for loop'
+            print 'after for loop'''
     finally:
         print 'bottom of generator'
     #generator will be empty if it won't hit yield anymore and finished. Thanks to yield you can 
@@ -24,7 +24,7 @@ word = 'Hello'
 mygene = create_generator(word, input('input something: '))
 
 for i in mygene:
-    print  i
+    print  'yay'
 
 print 'outside loop,', i
 print i
