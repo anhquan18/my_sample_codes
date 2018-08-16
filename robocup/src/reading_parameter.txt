@@ -1,0 +1,17 @@
+    The robot read the parameter from file to config the value of some action. All of that action is done by a class (StandardMoveConfig) and is called out in SoccerRole
+    And all of the the parameter in StandardMoveConfig is called out from a class called FileSystem
+
+    ####### rcl.py ####### 
+    class StandardMoveConfig(object)
+        KickArea(near, far, right near/far, left near/far)
+        mid_stride, max_stride of x, y, theta
+        kick_wait
+        period
+        enable_dribble
+        dominant_foot
+        have_ball_dist
+        have_ball_derg
+    
+    ####### rcl.py ####### 
+    class FileSystem(object)
+        receive the name of the wanted variable and search it from a file

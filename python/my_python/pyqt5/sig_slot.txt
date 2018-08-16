@@ -1,0 +1,10 @@
+    When an event takes place a signal will be emitted by widget and a slot_method(action) or a function connected 
+    to that widget will be called.
+
+    The principle of connecting signal to slot or function is applied by all widget:
+    widget.signal.connect(slot_method)
+
+    You can define a signal as well:
+    QtCore.QObject.connect(widget, QtCore.SIGNAL('signalname'), slot_function)
+
+    Pyqt support many signal not just click

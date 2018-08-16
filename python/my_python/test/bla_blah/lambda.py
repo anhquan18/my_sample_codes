@@ -19,6 +19,7 @@ list = [1,2,3,4,5,6,7,8,9,10]
 print filter(lambda x: x % 2 == 0, list)
 print reduce(lambda x, y: x + y, list)
 print map(lambda x: x*2+10, list)
+print '\n'
 
 num = range(2, 50)
 for i in range(2, 8):
