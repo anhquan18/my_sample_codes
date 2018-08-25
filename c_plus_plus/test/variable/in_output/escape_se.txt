@@ -1,0 +1,13 @@
+\n      new line
+\t      horizontal tab
+\b      backspace
+\r      carriage return
+\f      page feed(move to the first of next page)
+\'      single quotation mark
+\"      double
+\0      Null
+\\      backslash
+\?      question
+\a      alert (ring the sound of the bell)
+\xhh    heXadecimal 16
+\ooo    octal 8
