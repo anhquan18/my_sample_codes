@@ -10,6 +10,8 @@ int main()
 
     char c;         // 8 bit
 
+    static int i = 0;
+    extern int i;   // for global variable
 
     /* Under score:
        1. Having global scope, start with _

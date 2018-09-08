@@ -1,4 +1,3 @@
-    May not use jetson, use board created by yourself 
     B3M sometime won't boot when power is on. B3M may have some bugs with it
     Hardware is very complicated. 
     Need to spend lots of time to change battery

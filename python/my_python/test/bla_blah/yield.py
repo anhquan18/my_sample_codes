@@ -24,6 +24,7 @@ word = 'Hello'
 mygene = create_generator(word, input('input something: '))
 
 for i in mygene:
+    print 'inside loop', i
     print  'yay'
 
 print 'outside loop,', i
