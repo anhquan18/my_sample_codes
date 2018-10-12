@@ -42,10 +42,19 @@ class Alien(Monster):
             self.atk = atk
             self.enemy_hp = enemy_hp
             self.enemy_def = enemy_def
+            self.speed = 'fast'
             print 'Tail worked'
         def swing(self):
             self.enemy_hp -= self.atk - self.enemy_def
             print self.enemy_hp
+
+    class Wing(object):
+        def __init__(self):
+            self.speed = Tail.speed
+
+        def fly(self):
+            print "My flying speed is", self.speed
+
     # When the child class's function has the same name with the parent class's
     #function the child's one will replace the parent's one, use super() to call
     #the parent's one
@@ -69,6 +78,7 @@ class Alien(Monster):
         except Exception:
             pass
         self.__tail = self.Tail(self.atk, 4000, 400)
+        self.wing = self.Wing()
     
     @property
     def tail(self):
@@ -97,4 +107,6 @@ if __name__ == '__main__':
     print predator.__dict__
     print predator.__class__
     print predator.__class__.__name__
+
+    predator.wing.fly()
 
