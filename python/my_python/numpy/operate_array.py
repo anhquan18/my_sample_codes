@@ -30,8 +30,19 @@ def matrix_elementtwise():
     print (A@B) # matrix product
     print (A.dot(B)) # another matrix product
 
+def modify_array():
+    a = np.ones((3,4), dtype=int)
+    b = np.random.random((3,4))
+    a *= 3
+    b += a  # Cannot do this cause different type
+
+    print (a)
+    print (b)
+    a += b
+    print (a) 
+
 if __name__ == '__main__':
     #printing()
     #operation()
-    matrix_elementtwise()
-
+    #matrix_elementtwise()
+    modify_array()
