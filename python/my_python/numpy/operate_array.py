@@ -41,8 +41,20 @@ def modify_array():
     a += b
     print (a) 
 
+def modi2():
+    a = np.ones(3, dtype = np.int32)
+    b = np.linspace(0, np.pi, 3)
+    c = a+b
+    d = np.exp(c*1j)
+
+    print (c, 'C type is:', c.dtype.name)
+    print (d, 'D type is:', d.dtype.name)
+
+   
+
 if __name__ == '__main__':
     #printing()
     #operation()
     #matrix_elementtwise()
-    modify_array()
+    #modify_array()
+    modi2()
