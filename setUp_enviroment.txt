@@ -1,0 +1,9 @@
+Robocup git
+Your git 
+Simulator
+python2, 3.6, all module you need by pip ( numpy, matplotlib, pygame, django, pyqt5, openCV, thkinter, pandas )
+vim8
+bash, vim, dein
+qt-creator
+game monitor
+game controller
