@@ -50,11 +50,19 @@ def modi2():
     print (c, 'C type is:', c.dtype.name)
     print (d, 'D type is:', d.dtype.name)
 
-   
+def modi3():
+    b = np.arange(12).reshape(3,4)
+
+    print (b)
+    print (b.sum(axis=0))   # sum of dimension 0
+    print (b.sum(axis=1))
+    print (b.cumsum(axis=0))# cumulative sum along each row
+    print (b.min(axis=1))
 
 if __name__ == '__main__':
     #printing()
     #operation()
-    #matrix_elementtwise()
+    matrix_elementtwise()
     #modify_array()
-    modi2()
+    #modi2()
+    #modi3()

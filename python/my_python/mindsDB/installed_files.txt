@@ -1,0 +1,6 @@
+Successfully built Twisted itsdangerous tinymongo tinydb-serialization MarkupSafe sklearn
+
+Installing collected packages: scipy, zope.interface, constantly, incremental, attrs, six, Automat, idna, hyperlink, PyHamcrest, Twisted, pymongo, scikit-learn, Pillow, MarkupSafe, Jinja2, chardet, torch, torchvision, Click, itsdangerous, tinydb, tinydb-serialization, tinymongo, txaio, autobahn, Werkzeug, certifi, sklearn, Flask, urllib3, python-engineio, requests, python-socketio, Flask-SocketIO, mindsdb
+
+Successfully installed Automat-0.7.0 Click-7.0 Flask-1.0.2 Flask-SocketIO-3.0.2 Jinja2-2.10 MarkupSafe-1.0 Pillow-5.3.0 PyHamcrest-1.9.0 Twisted-18.7.0 Werkzeug-0.14.1 attrs-18.2.0 autobahn-18.9.2 certifi-2018.8.24 chardet-3.0.4 constantly-15.1.0 hyperlink-18.0.0 idna-2.7 incremental-17.5.0 itsdangerous-0.24 mindsdb-0.7.5 pymongo-3.7.1 python-engineio-2.3.1 python-socketio-2.0.0 requests-2.19.1 scikit-learn-0.20.0 scipy-1.1.0 six-1.11.0 sklearn-0.0 tinydb-3.11.1 tinydb-serialization-1.0.4 tinymongo-0.2.0 torch-0.4.1 torchvision-0.2.1 txaio-18.8.1 urllib3-1.23 zope.interface-4.5.0
+
