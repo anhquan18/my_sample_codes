@@ -25,9 +25,9 @@ def matrix_elementtwise():
     A = np.array([[1,1], [0,1]])
     B = np.array([[2,0], [3,4]])
 
-    print (A*B)  # elementtwise product
+    print (A*B)  # elementtwise product also is np.multiply()
     # only in python3.5 and after
-    print (A@B) # matrix product
+    print (A@B) # matrix product        also is np.matmul()
     print (A.dot(B)) # another matrix product
 
 def modify_array():
