@@ -1,9 +1,8 @@
 class ActionCancel(Exception):
     def __str__(self):
-        return self.__class__.__name__
+        return 'ERROR: '+self.__class__.__name__
 
 try:
     raise ActionCancel()
-except Exception as er:
+except ActionCancel as er:
     print er
-
