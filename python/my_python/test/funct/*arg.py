@@ -21,8 +21,9 @@ def p_kwargs(**kwargs): # Print keyword argument
 
 
 if __name__ == '__main__':
-    #p_tup(1,2,3,'Hello', 'Hi')
-    #output('Hello', "I'm Quan", 12,3,4,5,6)
+    p_tup(1,2,3,'Hello', 'Hi')
+    output('Hello', "I'm Quan", 12,3,4,5,6)
     
     p_kwargs(wine='wiskey',fruit='apple',age=20,anime='KonoSuba')
     p_kwargs(winner='me',fry='chicken',aniver=20,studio='MadHouse')
+    p_kwargs(name='Quan')

@@ -21,6 +21,10 @@ def create_array():
     a2 = np.array([1.2,3.4,5.6])
     b = np.array([(1.5, 2, 3), (4,5,6)])           # 2 dimensional <- sequences of sequences
     c = np.array([ [1,2], [3,4] ], dtype=complex)  # type of array can be initial
+    d = np.mgrid[0:4, 7:10]                        # create two matrix with row size decided by the first array and 
+    x1, y1 = np.meshgrid(np.arange(1, 11, 2), np.arange(-12, -3, 3)) # almost work like mgrid
+    x2, y2 = np.ogrid[1:11:2, -12:-3:3]
+    x3, y3 = np.broadcast_arrays(x2, y2)           # Act like mgrid, create two new matrix with the row size of first matrix and col size of second matrix
     rand = np.random.rand(3,2)                     # Randomly create array list
 
     print a1
@@ -29,6 +33,9 @@ def create_array():
     print a2.dtype
     print b
     print c
+    print d
+    print x1, y1
+    print x2, y2
     print rand
 
 def initial_array():

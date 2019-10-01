@@ -2,6 +2,11 @@
 #include<string>
 using namespace std;
 
+void output(string name="", string word="")
+{
+    cout << name << word;
+}
+
 int main()
 {
     string str1, str2;
@@ -20,6 +25,8 @@ int main()
 
     cout << "str1 size: "<< str1.length()<< endl;
     cout << "str1[1]: "<< str1[1]<< endl;
+
+    output("Quan", "hello");
 
     // if found can string::npos will be returned
     size_t index = str1.find("can");

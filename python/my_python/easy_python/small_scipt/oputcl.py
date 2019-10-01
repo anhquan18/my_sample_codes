@@ -12,10 +12,12 @@ blue  =   '\033[1;34m'#45m
 purple =  '\033[1;35m'#45m
 cyan =    '\033[1;36m'#45m
 white =   '\033[1;37m'#45m
-reset =   '\033[0;37m'
+l_white = '\033[0;37m'
+reset =   '\033[0m'
 
 def oput_colour():
     print 'My colourful texts'
+    #print c1, 'test c1'
     print green ,'Bright Green'
     print black ,'Black'
     print red   ,'Red'

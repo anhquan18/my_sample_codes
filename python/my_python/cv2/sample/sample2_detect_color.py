@@ -13,6 +13,8 @@ lower_blue = np.array([110,100,100])
 upper_blue = np.array([130,255,255]) 
 lower_green = np.array([50, 100, 100])
 upper_green = np.array([70, 255, 255])
+orange_ball_low = np.array([0, 135, 135])
+orange_ball_up = np.array([19, 255, 255])
   
 # This drives the program into an infinite loop. 
 while(1):        
@@ -20,10 +22,13 @@ while(1):
     res, frame = cap.read() # res check whether the cam is capturing any frame or not ||||| frame is the image numpy 8 bit matrix
     
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV) 
+    print(hsv)
+    print(hsv.shape)
   
 # This creates a mask of blue coloured  
 # objects found in the frame. 
-    mask = cv2.inRange(hsv, lower_red, upper_red) 
+    mask = cv2.inRange(hsv, orange_ball_low, orange_ball_up) 
+    print(type(mask))
     #if mask.all():
     #    print 'REDDDDDDDDDDDD',"\n"
   
