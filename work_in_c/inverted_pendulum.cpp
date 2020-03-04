@@ -8,6 +8,8 @@ int ADtoRad(float ad);
 const float pen_r = 0.9;
 const float 
 
+Analogin pen (AD5);
+
 int main()
 {
     float KI,KD,KP;
@@ -22,7 +24,7 @@ int main()
         theta = ADtoRad(pen.read());
         angular_speed = theta / check_time;
         angular_accel = theta / check_time;
-         
+     
         r_speed = angular_speed * pen_r;
 
 

@@ -1,1 +1,0 @@
-read ueada_probabilistic pdf_book. Implement particle filter first (reason: easy). Slam or BFOE in order to understand particle filter better.
