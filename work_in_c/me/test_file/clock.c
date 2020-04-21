@@ -10,7 +10,7 @@ int main ()
    printf("Starting of the program, start_t = %ld\n", start_t);
     
    printf("Going to scan a big loop, start_t = %ld\n", start_t);
-   for(i=0; i< 10; i++) {
+   for(i=0; i< 100000; i++) {
    }
    end_t = clock();
    printf("End of the big loop, end_t = %ld\n", end_t);

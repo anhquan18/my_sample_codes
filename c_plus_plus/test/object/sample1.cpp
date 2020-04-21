@@ -27,3 +27,4 @@ int main()
     MyClass mc;
 
     mc.num2 = 100; // You can set 
+}
