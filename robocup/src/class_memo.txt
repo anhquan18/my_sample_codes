@@ -1,8 +1,0 @@
-    Those classes created inside class in robocup source code usually be called in
-    __init__ and be saved as the secret vari of class which can only be callout
-     Ex: self.__brain = self.Brain()
-          def brain(self):
-            return self.__brain
-
-     Doing this will make it more security and you cannot find it from the outside
-     and only know it exist if you read the source code
