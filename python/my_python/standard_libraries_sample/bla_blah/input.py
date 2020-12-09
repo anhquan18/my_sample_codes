@@ -1,0 +1,5 @@
+a = int(input("Input: "))
+b = input("Input b: ")
+if a > 10: print('a bigger than 10')
+print(b)
+print('hello')
