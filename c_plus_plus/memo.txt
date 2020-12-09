@@ -1,2 +1,0 @@
-    File written in c++ will be translate to .o (object file) and inside it wil have a formula of the code(the all of the code will turn into number)
-    And then there will be some link attached to .o file which are the libraries that have the process teach the CPU how to execute the program file
